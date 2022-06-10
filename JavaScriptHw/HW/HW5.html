@@ -11,7 +11,7 @@
     <script>
         let theYear = document.querySelector("#idSelectYear");
         let theMonth = document.querySelector("#idSelectMonth");
-        let theDay = document.querySelector("idSelectDay");
+        let theDay = document.querySelector("#idSelectDay");
 
         theYear.addEventListener("change", addDate);
         theMonth.addEventListener("change", addDate);
@@ -38,16 +38,14 @@
             //opt.innerHTML = i;
             docFrag.appendChild(opt);
         }
-        theMonth.appendChild(docFrag);
-
-        let d = new Date(2022, 5, 0);   //6月的第0天
-        console.log(d);
-
-        let yy, mm, dd
+        theMonth.appendChild(docFrag);        
+        
+        let yy, mm, dd 
         function addDate() {
             yy = theYear.value;
             mm = theMonth.value;
-            dd = new Date(yy, mm).getDay.length
+            dd = new Date(yy, mm, 0).getDate();
+
             for (let i = 1; i <= dd; i++) {
                 let opt = document.createElement("option"); //<option></option>
                 opt.setAttribute("value", i);//<option value="1"></option>
@@ -58,7 +56,7 @@
                 docFrag.appendChild(opt);
             }
             theDay.appendChild(docFrag)
-            console.log(yy,mm)
+            console.log(yy,mm,dd)
         }
     </script>
 </body>
