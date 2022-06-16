@@ -69,9 +69,12 @@
   <ItemGroup>
     <Content Include="HW\HW1.html" />
     <Content Include="HW\HW2.html" />
+    <Content Include="HW\HW3.html" />
     <Content Include="HW\HW5.html" />
     <Content Include="HW\images\accept.png" />
+    <Content Include="HW\images\chngstar.gif" />
     <Content Include="HW\images\remove.png" />
+    <Content Include="HW\images\star.gif" />
     <Content Include="HW\StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
